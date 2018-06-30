@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
+import {withStyles} from '@material-ui/core/styles'
 
 class SignInPage extends Component {
     render() {
-        const {styles} = this.props
+        const {classes} = this.props
         return (
-            <div className={styles.app}>
+            <div className={classes.app}>
                 <header className="App-header">
                     <h1 className="App-title">Welcome to React</h1>
                 </header>
@@ -19,4 +20,4 @@ class SignInPage extends Component {
 
 SignInPage.propTypes = {}
 
-export default SignInPage
+export default withStyles(theme=>({}))(SignInPage)
